@@ -5,7 +5,7 @@ import Box from 'components/Box'
 import Button from 'components/Button'
 import Card from 'components/Card'
 import Typography from 'components/Typography'
-import { LogoText, KeyBig, DocumentBig } from 'components/icons'
+import { KeyBig, DocumentBig } from 'components/icons'
 
 const OnBoardingCard = ({ number, title, icon, href, ...props }) => (
   <Card
@@ -63,9 +63,11 @@ const OnBoarding = () => (
     height="100%"
   >
     <Typography variant="typo12" mb={42} color="gray.0">
-      Bienvenid(a) a
+      Bienvenido(a) a
     </Typography>
-    <LogoText style={{ width: 260 }} />
+    <Typography variant="typo12" mb={42} color="gray.0">
+      <b>Villalba</b> Search
+    </Typography>
     <Typography variant="typo13" mt={12} color="main.default">
       Mini Dashboard
     </Typography>
@@ -80,14 +82,14 @@ const OnBoarding = () => (
     <CardsContainer>
       <OnBoardingCard
         number="1"
-        title="Set your API key (optional)"
-        href="https://docs.meilisearch.com/reference/features/authentication.html#master-key"
+        title="Configura tu clave API (Requerido)"
+        href="#"
         icon={<KeyBig />}
       />
       <OnBoardingCard
         number="2"
-        title="Select an index"
-        href="https://docs.meilisearch.com/learn/core_concepts/indexes.html"
+        title="Seleccione un índice"
+        href="#"
         icon={<DocumentBig />}
       />
       {/* TODO: Enable it once facet search is available */}

@@ -208,7 +208,7 @@ const App = () => {
             </Body>
           </InstantSearch>
           <Modal
-            title={`Enter your admin API key${
+            title={`Ingrese clave de la aplicación antes de continuar (API)${
               requireApiKeyToWork ? '' : ' (optional)'
             }`}
             dialog={dialog}

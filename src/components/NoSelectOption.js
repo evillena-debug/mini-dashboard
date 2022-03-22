@@ -15,7 +15,7 @@ const NoSelectOption = () => (
     alignItems="center"
   >
     <Typography variant="typo4" color="gray.6" mb={3}>
-      no index found
+      no se encontró índice
     </Typography>
     <Button
       variant="bordered"

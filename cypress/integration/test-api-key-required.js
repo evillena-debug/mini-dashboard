@@ -14,7 +14,7 @@ describe(`Test API key required`, () => {
   })
 
   it('Should find a text in modal requesting API key', () => {
-    cy.contains('Enter your admin API key')
+    cy.contains('Ingrese su clave de API para utilizar esta herramienta')
   })
 
   it('Should fail on wrong API key', () => {
@@ -24,7 +24,7 @@ describe(`Test API key required`, () => {
         .should('have.value', WRONG_APIKEY)
       cy.get('button').contains('Go').click()
       cy.wait(WAITING_TIME)
-      cy.contains('The provided API key is invalid.')
+      cy.contains('La clave API proporcionada no es válida.')
     })
   })
 
@@ -74,7 +74,7 @@ describe(`Test API key required`, () => {
         .should('have.value', WRONG_APIKEY)
       cy.get('button').contains('Go').click()
       cy.wait(WAITING_TIME)
-      cy.contains('The provided API key is invalid.')
+      cy.contains('La clave API proporcionada no es válida.')
     })
   })
 })
