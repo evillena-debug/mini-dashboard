@@ -29,7 +29,7 @@ describe(`Test search`, () => {
 
   it('Should display a message if there are no result for the user’s search', () => {
     cy.get('input[type="search"]').type('zz')
-    cy.contains('Sorry mate, no results matching your request')
+    cy.contains('Lo siento compañero, no hay resultados que coincidan con su solicitud')
   })
 
   it('Should display a "Load more" button if there are more than 20 results', () => {

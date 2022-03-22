@@ -23,7 +23,7 @@ import { MeiliSearch } from 'meilisearch'
 export const baseUrl =
   process.env.REACT_APP_MEILI_SERVER_ADDRESS ||
   (process.env.NODE_ENV === 'development'
-    ? 'http://0.0.0.0:7700'
+    ? 'http://127.0.0.1:7700'
     : window.location.origin)
 
 const Wrapper = styled.div`
@@ -49,7 +49,7 @@ const Content = ({ currentIndex }) => {
         mb={32}
         color="gray.0"
       >
-        There’s no document in the selected index
+        No hay ningún documento en el índice seleccionado
       </Typography>
     </EmptyView>
   )
@@ -63,7 +63,7 @@ const NoMeiliSearchRunning = () => (
       mb={3}
       color="gray.0"
     >
-      It seems like Meilisearch isn’t running, did you forget to start it?
+      Parece que Villalba Search no se está ejecutando, ¿olvidaste iniciarlo?
     </Typography>
     <Typography
       variant="typo8"
@@ -71,7 +71,7 @@ const NoMeiliSearchRunning = () => (
       mb={32}
       color="gray.2"
     >
-      (Don’t forget to set an API Key if you want one)
+      (No olvide establecer una clave API si desea una)
     </Typography>
     <Typography
       variant="typo8"

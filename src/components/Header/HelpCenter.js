@@ -5,7 +5,6 @@ import { DialogDisclosure, useDialogState } from 'reakit/Dialog'
 
 import {
   MeilisearchLogo,
-  SlackLogo,
   GithubLogo,
   InterrogationMark,
 } from 'components/icons'
@@ -91,33 +90,23 @@ const HelpCenter = () => {
         )}
       </DialogDisclosure>
       <Modal
-        title="Help Center"
+        title="Centro de Ayuda"
         dialog={dialog}
-        ariaLabel="Help Center"
+        ariaLabel="Centro de Ayuda"
         style={{ paddingBottom: 56 }}
       >
-        <Typography variant="typo11" color="gray.6">
-          If you need help with anything, here are a few links that can be
-          useful.
-        </Typography>
         <CardsContainer>
           <HelpCard
             logo={<GithubLogo style={{ width: 62 }} />}
             title="Github"
-            description="Explore our repositories on Github"
-            href="https://github.com/meilisearch"
-          />
-          <HelpCard
-            logo={<SlackLogo style={{ width: 62 }} />}
-            title="Slack"
-            description="Join our Slack Community and find the help you need"
-            href="https://slack.meilisearch.com/"
+            description="Explora nuestros repositorios en Github"
+            href="https://github.com/evillena-debug"
           />
           <HelpCard
             logo={<MeilisearchLogo style={{ width: 62 }} />}
-            title="Documentation"
-            description="Learn how to tune your Meilisearch"
-            href="https://docs.meilisearch.com/"
+            title="Contacto"
+            description="Centro de ayuda"
+            href="https://www.villalba.cl/contacto/"
           />
         </CardsContainer>
       </Modal>

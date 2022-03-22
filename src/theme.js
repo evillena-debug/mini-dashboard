@@ -1,10 +1,10 @@
 const theme = {
   colors: {
     main: {
-      default: '#E41359',
+      default: '#0080df',
       hover: '#CA1B53',
       dark: '#73313D',
-      light: '#FFDBE7',
+      light: '#b6dcf8',
       lighter: '#FDEEF3',
     },
     gray: [

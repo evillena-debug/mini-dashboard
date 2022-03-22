@@ -227,7 +227,7 @@ const Hit = ({ hit, imageKey }) => {
                 toggable
                 onClick={() => setDisplayMore(true)}
               >
-                Show more
+                Leer más
               </Button>
             </div>
           </Grid>

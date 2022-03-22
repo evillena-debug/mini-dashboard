@@ -37,7 +37,7 @@ const OnBoardingCard = ({ number, title, icon, href, ...props }) => (
       target="_blank"
       style={{ textDecoration: 'none' }}
     >
-      Learn more
+      Aprende más
     </Button>
   </Card>
 )
@@ -63,7 +63,7 @@ const OnBoarding = () => (
     height="100%"
   >
     <Typography variant="typo12" mb={42} color="gray.0">
-      Welcome to
+      Bienvenid(a) a
     </Typography>
     <LogoText style={{ width: 260 }} />
     <Typography variant="typo13" mt={12} color="main.default">
@@ -75,7 +75,7 @@ const OnBoarding = () => (
       style={{ maxWidth: 368, textAlign: 'center' }}
       mt={68}
     >
-      This dashboard will help you check the search results with ease.
+      Busca los productos que necesitas con facilidad.
     </Typography>
     <CardsContainer>
       <OnBoardingCard

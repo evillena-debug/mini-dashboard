@@ -3,14 +3,14 @@ import EmptyView from 'components/EmptyView'
 import Typography from 'components/Typography'
 
 const NoResultForRequest = () => (
-  <EmptyView buttonLink="https://docs.meilisearch.com/reference/api/search.html">
+  <EmptyView buttonLink="https://www.villalba.cl/contacto/">
     <Typography
       variant="typo8"
       style={{ textAlign: 'center' }}
       mb={16}
       color="gray.0"
     >
-      Sorry mate, no results matching your request
+      Lo siento, no hay resultados que coincidan con su solicitud
     </Typography>
     <Typography variant="typo8" style={{ textAlign: 'center' }} mb={56}>
       <span role="img" aria-label="sad">

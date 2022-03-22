@@ -58,7 +58,7 @@ const InfiniteHits = connectInfiniteHits(({ hits, hasMore, refineNext }) => {
           onClick={refineNext}
           style={{ margin: '0 auto', marginTop: 32 }}
         >
-          Load more
+          Leer más
         </Button>
       )}
       <ScrollToTop />

@@ -110,7 +110,7 @@ const IndexId = styled(Typography)`
 const TextToDisplay = ({ option, currentOption }) => (
   <>
     <IndexId variant="typo4" color={currentOption ? 'gray.0' : 'gray.2'} mr={2}>
-      {option ? option.uid : 'Select an index'}
+      {option ? option.uid : 'Seleccione un índice'}
     </IndexId>{' '}
     {option?.stats && (
       <Typography variant="typo6" color="gray.7" mt="1px">

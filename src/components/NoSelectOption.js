@@ -21,11 +21,11 @@ const NoSelectOption = () => (
       variant="bordered"
       size="small"
       as="a"
-      href="https://docs.meilisearch.com/learn/getting_started/quick_start.html#add-documents"
+      href="https://www.villalba.cl/contacto/"
       target="_blank"
       style={{ textDecoration: 'none' }}
     >
-      Need help?
+      Necesitas ayuda?
     </Button>
   </Box>
 )

@@ -39,7 +39,7 @@ const Stats = ({ nbHits, processingTimeMS, nbResults, ...props }) => (
     />
     <Stat
       icon={<Speed style={{ height: 13 }} />}
-      legend="Time spent"
+      legend="Velocidad"
       value={`${processingTimeMS} ms`}
     />
   </StatsContainer>
