@@ -142,10 +142,12 @@ const Select = ({
               <IndexItem
                 {...menu}
                 key={index}
-                id={data.uid}
+                id={data.primaryKey}
+                name={data.uid}
                 type="button"
                 onClick={() => {
                   onChange(data)
+                  console.log(data)
                   menu.hide()
                 }}
                 $selected={currentOption?.uid === data.uid}
