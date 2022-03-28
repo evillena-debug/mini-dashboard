@@ -142,7 +142,7 @@ const Select = ({
               <IndexItem
                 {...menu}
                 key={index}
-                id={data.primaryKey}
+                id={data.uid}
                 name={data.uid}
                 type="button"
                 onClick={() => {

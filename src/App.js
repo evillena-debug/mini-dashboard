@@ -106,19 +106,18 @@ const App = () => {
   const getIndexesList = async () => {
     try {
       const res = await MSClient.getStats()
-      const res2 = await MSClient.getIndexes()
+
       const array = Object.entries(res.indexes)
       const options = array
         .reduce((prev, curr) => {
           const currentOption = {
             uid: curr[0],
             stats: curr[1],
-            primaryKey: res2.find((primaryKey) => primaryKey.uid === curr[0])
-              .primaryKey,
+            id: curr[0] === 'Todos' ? '0' : curr[0],
           }
           return [...prev, currentOption]
         }, [])
-        .sort((a, b) => a.primaryKey.localeCompare(b.primaryKey))
+        .sort((a, b) => a.id.localeCompare(b.id))
 
       setIndexes(options)
       if (options.length) {
