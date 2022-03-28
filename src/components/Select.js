@@ -147,7 +147,6 @@ const Select = ({
                 type="button"
                 onClick={() => {
                   onChange(data)
-                  console.log(data)
                   menu.hide()
                 }}
                 $selected={currentOption?.uid === data.uid}
