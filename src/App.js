@@ -49,7 +49,17 @@ const Content = ({ currentIndex }) => {
         mb={32}
         color="gray.0"
       >
-        No hay ningún documento en el índice seleccionado
+        No hay ningún documento en el índice seleccionado, recuerde limpiar el
+        buscador de productos.
+      </Typography>
+      <Typography
+        variant="typo8"
+        style={{ textAlign: 'center', fontSize: 40 }}
+        mb={56}
+      >
+        <span role="img" aria-label="sad">
+          ☹️
+        </span>
       </Typography>
     </EmptyView>
   )
